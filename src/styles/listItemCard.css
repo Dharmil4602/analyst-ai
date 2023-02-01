@@ -53,3 +53,9 @@
     background-color: black;
     cursor: pointer;
 }
+
+.list-item-card.expand
+{
+    background-color: antiquewhite;
+    height: 100vh;
+}
