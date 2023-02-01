@@ -1,9 +1,16 @@
 import React from 'react'
+import ListItem from './ListItem'
+import '../styles/list.css'
 
 function List() {
   return (
     <>
-    List
+    <ListItem/>
+    <ListItem/>
+    <ListItem/>
+    <ListItem/>
+    <ListItem/>
+    <ListItem/>
     </>
   )
 }
