@@ -6,9 +6,15 @@
 .list-item
 {
     display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(215, 167, 167);
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-color: rgb(208, 172, 172);
     height: fit-content;
     margin: 10px 20px;
     border-radius: 20px;
+}
+
+.h-primary
+{
+    font-size: 1.5rem;
 }
