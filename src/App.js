@@ -21,7 +21,7 @@ function App() {
     <>
       <div>
         <h1 style={{textAlign: 'center'}}>Details Of Customers</h1>
-        <ListItemCard/>
+        <ListItem/>
       </div>
     </>
   );

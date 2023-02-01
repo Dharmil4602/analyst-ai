@@ -1,39 +1,4 @@
-.list-item-container {
-  /* margin: 0px 20px; */
-  display: flex;
-}
-
-.list-item-table {
-  background-color: rgba(0, 255, 0, 0.386);
-  border-radius: 20px;
-  width: 100%;
-  border-collapse: inherit;
-  border-spacing: 0;
-  margin: 20px 30px;
-}
-
-thead {
-  font-size: 1.8rem;
-}
-
-tbody {
-  text-align: center;
-  font-size: 20px;
-  border: 2px solid black;
-}
-
-.body-row {
-    background-color: aqua;
-    margin: 20px;
-  border: 1px solid black;
-  height: 100px;
-  /* background-color: aqua; */
-  /* row-gap: 20px;
-  border-radius: 10px; */
-  /* border-spacing: 10px 15px; */
-}
-
-.body-row td {
-  /* height: 80px; */
-  padding: 10px;
+.list-item
+{
+    margin: 20px 0;
 }

@@ -1,26 +1,26 @@
 import React from "react";
 import "../styles/listItem.css";
 import { useState, useEffect } from "react";
+import ListItemCard from "./ListItemCard";
 
 function ListItem(props) {
+  const [data, setData] = useState([]);
 
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-      const fetchData = async () => {
-        const response = await fetch(
-          "https://jsonplaceholder.typicode.com/users"
-        );
-        const json = await response.json();
-        setData(json);
-      };
-      fetchData();
-    }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/users"
+      );
+      const json = await response.json();
+      setData(json);
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
       {/* Displaying the above data in table format */}
-      <div className="list-item-container">
+      {/* <div className="list-item-container">
         <table className="list-item-table">
           <thead>
               <tr>
@@ -45,7 +45,22 @@ function ListItem(props) {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> */}
+
+      {/* Mapping each element in ListItemCard */}
+      {data.map((item) => (
+        <div className="list-item">
+          <ListItemCard
+            key={item.id}
+            cname={item.company.name}
+            contact={item.phone}
+            city={item.address.city}
+            zipcode={item.address.zipcode}
+          />
+        </div>
+      ))}
+
+      {/* <ListItemCard/> */}
     </>
   );
 }
