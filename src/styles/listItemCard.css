@@ -1,12 +1,18 @@
 .list-item-container
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px 20px;
 }
 
 .list-items
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: antiquewhite;
+    height: 150px;
     border-radius: 20px;
     width: 100%;
 }
@@ -25,10 +31,12 @@
     font-size: 1.5rem;
 }
 
-.list-item-button
+.list-item-cname, .list-item-contact, .list-item-city, .list-item-zipcode, .list-item-button
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    text-align: center;
 }

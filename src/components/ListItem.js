@@ -49,9 +49,8 @@ function ListItem(props) {
 
       {/* Mapping each element in ListItemCard */}
       {data.map((item) => (
-        <div className="list-item">
+        <div className="list-item" key={item.id}>
           <ListItemCard
-            key={item.id}
             cname={item.company.name}
             contact={item.phone}
             city={item.address.city}
