@@ -1,18 +1,20 @@
-import React from 'react'
-import ListItem from './ListItem'
-import '../styles/list.css'
+import React from "react";
+import ListItem from "./ListItem";
+import "../styles/list.css";
 
 function List() {
   return (
     <>
-    <ListItem/>
-    <ListItem/>
-    <ListItem/>
-    <ListItem/>
-    <ListItem/>
-    <ListItem/>
+      <div className="list">
+        <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
+        <ListItem />
+      </div>
     </>
-  )
+  );
 }
 
-export default List
+export default List;

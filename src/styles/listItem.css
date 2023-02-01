@@ -1,0 +1,14 @@
+.list-item-container
+{
+    /* background-color: rgba(0, 255, 0, 0.386); */
+}
+
+.list-item
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(215, 167, 167);
+    height: fit-content;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
