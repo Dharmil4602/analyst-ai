@@ -25,7 +25,7 @@ function ListItemCard(props) {
             </div>
             <div className="list-item-button">
                 <h1 className='h-primary'>Details</h1>
-                <button>View Details</button>
+                <button className='btn-detail'>View Details</button>
             </div>
           </div>
         </div>

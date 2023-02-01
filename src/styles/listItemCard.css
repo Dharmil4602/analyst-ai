@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin: 0px 20px;
+    font-family: cursive;
 }
 
 .list-items
@@ -15,6 +16,7 @@
     height: 150px;
     border-radius: 20px;
     width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .list-item-card
@@ -24,11 +26,12 @@
     width: 100%;
     text-align: center;
     align-content: center;
+    font-size: 20px;
 }
 
 .h-primary
 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .list-item-cname, .list-item-contact, .list-item-city, .list-item-zipcode, .list-item-button
@@ -39,4 +42,14 @@
     align-items: center;
     width: 100%;
     text-align: center;
+}
+
+.btn-detail
+{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: azure;
+    background-color: black;
+    cursor: pointer;
 }
