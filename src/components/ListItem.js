@@ -3,7 +3,7 @@ import "../styles/listItem.css";
 import { useState, useEffect } from "react";
 import ListItemCard from "./ListItemCard";
 
-function ListItem(props) {
+function ListItem() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -17,6 +17,17 @@ function ListItem(props) {
     fetchData();
   }, []);
 
+  // setting expand detail feature for each listitemcard
+  const expandDetails = () => {
+    console.log("clicked");
+    const listItemExpand = document.querySelector(".list-items");
+    const itemDetailsExpand = document.querySelector(
+      ".item-details-expand-card"
+    );
+    listItemExpand.classList.toggle("expand");
+    itemDetailsExpand.classList.toggle("expand");
+  };
+
   return (
     <>
       {/* Mapping each element in ListItemCard */}
@@ -27,12 +38,13 @@ function ListItem(props) {
             contact={item.phone}
             city={item.address.city}
             zipcode={item.address.zipcode}
-            street = {item.address.street}
-            suite = {item.address.suite}
-            username = {item.username}
-            email = {item.email}
-            website = {item.website}
-            buttonDetail = {"View Details"}
+            street={item.address.street}
+            suite={item.address.suite}
+            username={item.username}
+            email={item.email}
+            website={item.website}
+            buttonDetail={"View Details"}
+            expandDetails={expandDetails}
           />
         </div>
       ))}

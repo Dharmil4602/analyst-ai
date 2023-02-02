@@ -3,15 +3,15 @@ import "../styles/listItemCard.css";
 
 function ListItemCard(props) {
   // writing function to expand on click of button
-  const expandDetails = () => {
-    console.log("clicked");
-    const listItemExpand = document.querySelector(".list-items");
-    const itemDetailsExpand = document.querySelector(
-      ".item-details-expand-card"
-    );
-    listItemExpand.classList.toggle("expand");
-    itemDetailsExpand.classList.toggle("expand");
-  };
+  // const expandDetails = () => {
+  //   console.log("clicked");
+  //   const listItemExpand = document.querySelector(".list-items");
+  //   const itemDetailsExpand = document.querySelector(
+  //     ".item-details-expand-card"
+  //   );
+  //   listItemExpand.classList.toggle("expand");
+  //   itemDetailsExpand.classList.toggle("expand");
+  // };
 
   return (
     <>
@@ -36,7 +36,7 @@ function ListItemCard(props) {
             </div>
             <div className="list-item-button">
               <h1 className="h-primary">Details</h1>
-              <button className="btn-detail" onClick={expandDetails}>
+              <button className="btn-detail" onClick={props.expandDetails}>
                 {props.buttonDetail}
               </button>
             </div>
