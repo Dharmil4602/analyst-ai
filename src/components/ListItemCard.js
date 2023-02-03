@@ -2,16 +2,6 @@ import React from "react";
 import "../styles/listItemCard.css";
 
 function ListItemCard(props) {
-  // writing function to expand on click of button
-  // const expandDetails = () => {
-  //   console.log("clicked");
-  //   const listItemExpand = document.querySelector(".list-items");
-  //   const itemDetailsExpand = document.querySelector(
-  //     ".item-details-expand-card"
-  //   );
-  //   listItemExpand.classList.toggle("expand");
-  //   itemDetailsExpand.classList.toggle("expand");
-  // };
 
   return (
     <>

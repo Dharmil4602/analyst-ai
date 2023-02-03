@@ -5,7 +5,10 @@ import ListItemCard from "./ListItemCard";
 
 function ListItem() {
   const [data, setData] = useState([]);
+  const [btnData, setBtnData] = useState("View Details");
 
+
+  // fetching data from api
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
@@ -26,6 +29,7 @@ function ListItem() {
     );
     listItemExpand.classList.toggle("expand");
     itemDetailsExpand.classList.toggle("expand");
+    setBtnData(btnData === "View Details" ? "Hide Details" : "View Details")
   };
 
   return (
@@ -43,7 +47,7 @@ function ListItem() {
             username={item.username}
             email={item.email}
             website={item.website}
-            buttonDetail={"View Details"}
+            buttonDetail={btnData}
             expandDetails={expandDetails}
           />
         </div>
