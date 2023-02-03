@@ -23,12 +23,22 @@ function ListItem() {
   // setting expand detail feature for each listitemcard
   const expandDetails = () => {
     console.log("clicked");
-    const listItemExpand = document.querySelector(".list-items");
-    const itemDetailsExpand = document.querySelector(
-      ".item-details-expand-card"
-    );
-    listItemExpand.classList.toggle("expand");
-    itemDetailsExpand.classList.toggle("expand");
+    // const listItemExpand = document.querySelector(".list-items");
+    // const itemDetailsExpand = document.querySelector(
+    //   ".item-details-expand-card"
+    // );
+    // listItemExpand.classList.toggle("expand");
+    // itemDetailsExpand.classList.toggle("expand");
+    var acc = document.getElementsByClassName("list-items");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("expand");
+        var panel = this.lastElementChild;
+        panel.classList.toggle("expand");
+      });
+    }
     setBtnData(btnData === "View Details" ? "Hide Details" : "View Details")
   };
 
